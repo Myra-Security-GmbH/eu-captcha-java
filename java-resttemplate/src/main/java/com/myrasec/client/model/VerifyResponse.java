@@ -1,6 +1,6 @@
 /*
  * Myra EU Captcha API
- * The API for Myra EU CAPTCHA provides one end point to verify the validity of client requests using EU CAPTCHA technology developed by Myra Security.  This API only describes how the validation of the EU CAPTCHA works. For a description of How-To-Integrate the EU CAPTCHA into your website, please refer to https://docs.eu-captcha.eu/  <br>  **Version History** | Version | |  Reason for change | | --- | --- | --- | | 1.0 |  | Initial release | 
+ * The API for Myra EU CAPTCHA provides one end point to verify the validity of client requests using EU CAPTCHA technology developed by Myra Security.      This API only describes how the validation of the EU CAPTCHA works. For a description of How-To-Integrate the EU CAPTCHA into your website, please refer to https://docs.eu-captcha.eu/         **Version History** | Version | |  Reason for change | | --- | --- | --- | | 1.0 |  | Initial release | 
  *
  * The version of the OpenAPI document: 1.0
  * 
@@ -30,7 +30,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   VerifyResponse.JSON_PROPERTY_SUCCESS,
   VerifyResponse.JSON_PROPERTY_TRAIN
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-11T09:46:28.304865520+01:00[Europe/Berlin]", comments = "Generator version: 7.18.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-11T13:29:19.732646793+01:00[Europe/Berlin]", comments = "Generator version: 7.18.0")
 public class VerifyResponse {
   public static final String JSON_PROPERTY_SUCCESS = "success";
   @javax.annotation.Nullable
@@ -50,7 +50,7 @@ public class VerifyResponse {
   }
 
   /**
-   * The status of the verification.  Possible values:&lt;ul&gt;&lt;li&gt;true&lt;/li&gt;&lt;li&gt;false&lt;/li&gt;&lt;/ul&gt; 
+   * The status of the verification.      Possible values:       - true     - false 
    * @return success
    */
   @javax.annotation.Nullable

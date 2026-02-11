@@ -1,6 +1,6 @@
 /*
  * Myra EU Captcha API
- * The API for Myra EU CAPTCHA provides one end point to verify the validity of client requests using EU CAPTCHA technology developed by Myra Security.  This API only describes how the validation of the EU CAPTCHA works. For a description of How-To-Integrate the EU CAPTCHA into your website, please refer to https://docs.eu-captcha.eu/  <br>  **Version History** | Version | |  Reason for change | | --- | --- | --- | | 1.0 |  | Initial release | 
+ * The API for Myra EU CAPTCHA provides one end point to verify the validity of client requests using EU CAPTCHA technology developed by Myra Security.      This API only describes how the validation of the EU CAPTCHA works. For a description of How-To-Integrate the EU CAPTCHA into your website, please refer to https://docs.eu-captcha.eu/         **Version History** | Version | |  Reason for change | | --- | --- | --- | | 1.0 |  | Initial release | 
  *
  * The version of the OpenAPI document: 1.0
  * 
@@ -16,7 +16,7 @@ package com.myrasec.client.auth;
 import org.springframework.http.HttpHeaders;
 import org.springframework.util.MultiValueMap;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-11T09:46:28.304865520+01:00[Europe/Berlin]", comments = "Generator version: 7.18.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-11T13:29:19.732646793+01:00[Europe/Berlin]", comments = "Generator version: 7.18.0")
 public interface Authentication {
     /**
      * Apply authentication settings to header and / or query parameters.

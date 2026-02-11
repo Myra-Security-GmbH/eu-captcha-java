@@ -27,7 +27,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-11T09:46:28.304865520+01:00[Europe/Berlin]", comments = "Generator version: 7.18.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-11T13:29:19.732646793+01:00[Europe/Berlin]", comments = "Generator version: 7.18.0")
 public class EuCaptchaApi extends BaseApi {
 
     public EuCaptchaApi() {
@@ -40,7 +40,7 @@ public class EuCaptchaApi extends BaseApi {
 
     /**
      * Verify submitted client token
-     * The client of the end-user have to make certain calculations as a so-called **proof-of-work** mechanism. The end point determines whether those calculations have been performed correctly. Also if the token has been used before, among other validation functions.  As a result the body returns a JSON object with the attribute &#x60;&#x60;success&#x60;&#x60; as true or false (boolean). 
+     * The client of the end-user have to make certain calculations as a so-called **proof-of-work** mechanism.   The end point determines whether those calculations have been performed correctly. Also if the token has been used before, among other validation functions.      As a result the body returns a JSON object with the attribute &#x60;&#x60;success&#x60;&#x60; as true or false (boolean). 
      * <p><b>200</b> - A JSON object with the attribute &#x60;&#x60;success&#x60;&#x60; with the value 0 (&#x60;&#x60;false&#x60;&#x60;) or 1 (&#x60;&#x60;true&#x60;&#x60;).
      * @param verifyRequest  (required)
      * @return VerifyResponse
@@ -52,7 +52,7 @@ public class EuCaptchaApi extends BaseApi {
 
     /**
      * Verify submitted client token
-     * The client of the end-user have to make certain calculations as a so-called **proof-of-work** mechanism. The end point determines whether those calculations have been performed correctly. Also if the token has been used before, among other validation functions.  As a result the body returns a JSON object with the attribute &#x60;&#x60;success&#x60;&#x60; as true or false (boolean). 
+     * The client of the end-user have to make certain calculations as a so-called **proof-of-work** mechanism.   The end point determines whether those calculations have been performed correctly. Also if the token has been used before, among other validation functions.      As a result the body returns a JSON object with the attribute &#x60;&#x60;success&#x60;&#x60; as true or false (boolean). 
      * <p><b>200</b> - A JSON object with the attribute &#x60;&#x60;success&#x60;&#x60; with the value 0 (&#x60;&#x60;false&#x60;&#x60;) or 1 (&#x60;&#x60;true&#x60;&#x60;).
      * @param verifyRequest  (required)
      * @return ResponseEntity&lt;VerifyResponse&gt;

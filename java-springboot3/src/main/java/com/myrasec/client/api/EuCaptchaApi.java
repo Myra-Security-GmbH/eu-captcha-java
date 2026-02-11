@@ -27,7 +27,7 @@ import org.springframework.web.reactive.function.client.WebClientResponseExcepti
 import reactor.core.publisher.Mono;
 import reactor.core.publisher.Flux;
 
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-11T09:46:30.132777091+01:00[Europe/Berlin]", comments = "Generator version: 7.18.0")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-11T13:29:21.494290851+01:00[Europe/Berlin]", comments = "Generator version: 7.18.0")
 public class EuCaptchaApi {
     private ApiClient apiClient;
 
@@ -49,7 +49,7 @@ public class EuCaptchaApi {
 
     /**
      * Verify submitted client token
-     * The client of the end-user have to make certain calculations as a so-called **proof-of-work** mechanism. The end point determines whether those calculations have been performed correctly. Also if the token has been used before, among other validation functions.  As a result the body returns a JSON object with the attribute &#x60;&#x60;success&#x60;&#x60; as true or false (boolean). 
+     * The client of the end-user have to make certain calculations as a so-called **proof-of-work** mechanism.   The end point determines whether those calculations have been performed correctly. Also if the token has been used before, among other validation functions.      As a result the body returns a JSON object with the attribute &#x60;&#x60;success&#x60;&#x60; as true or false (boolean). 
      * <p><b>200</b> - A JSON object with the attribute &#x60;&#x60;success&#x60;&#x60; with the value 0 (&#x60;&#x60;false&#x60;&#x60;) or 1 (&#x60;&#x60;true&#x60;&#x60;).
      * @param verifyRequest The verifyRequest parameter
      * @return VerifyResponse
@@ -86,7 +86,7 @@ public class EuCaptchaApi {
 
     /**
      * Verify submitted client token
-     * The client of the end-user have to make certain calculations as a so-called **proof-of-work** mechanism. The end point determines whether those calculations have been performed correctly. Also if the token has been used before, among other validation functions.  As a result the body returns a JSON object with the attribute &#x60;&#x60;success&#x60;&#x60; as true or false (boolean). 
+     * The client of the end-user have to make certain calculations as a so-called **proof-of-work** mechanism.   The end point determines whether those calculations have been performed correctly. Also if the token has been used before, among other validation functions.      As a result the body returns a JSON object with the attribute &#x60;&#x60;success&#x60;&#x60; as true or false (boolean). 
      * <p><b>200</b> - A JSON object with the attribute &#x60;&#x60;success&#x60;&#x60; with the value 0 (&#x60;&#x60;false&#x60;&#x60;) or 1 (&#x60;&#x60;true&#x60;&#x60;).
      * @param verifyRequest The verifyRequest parameter
      * @return VerifyResponse
@@ -99,7 +99,7 @@ public class EuCaptchaApi {
 
     /**
      * Verify submitted client token
-     * The client of the end-user have to make certain calculations as a so-called **proof-of-work** mechanism. The end point determines whether those calculations have been performed correctly. Also if the token has been used before, among other validation functions.  As a result the body returns a JSON object with the attribute &#x60;&#x60;success&#x60;&#x60; as true or false (boolean). 
+     * The client of the end-user have to make certain calculations as a so-called **proof-of-work** mechanism.   The end point determines whether those calculations have been performed correctly. Also if the token has been used before, among other validation functions.      As a result the body returns a JSON object with the attribute &#x60;&#x60;success&#x60;&#x60; as true or false (boolean). 
      * <p><b>200</b> - A JSON object with the attribute &#x60;&#x60;success&#x60;&#x60; with the value 0 (&#x60;&#x60;false&#x60;&#x60;) or 1 (&#x60;&#x60;true&#x60;&#x60;).
      * @param verifyRequest The verifyRequest parameter
      * @return ResponseEntity&lt;VerifyResponse&gt;
@@ -112,7 +112,7 @@ public class EuCaptchaApi {
 
     /**
      * Verify submitted client token
-     * The client of the end-user have to make certain calculations as a so-called **proof-of-work** mechanism. The end point determines whether those calculations have been performed correctly. Also if the token has been used before, among other validation functions.  As a result the body returns a JSON object with the attribute &#x60;&#x60;success&#x60;&#x60; as true or false (boolean). 
+     * The client of the end-user have to make certain calculations as a so-called **proof-of-work** mechanism.   The end point determines whether those calculations have been performed correctly. Also if the token has been used before, among other validation functions.      As a result the body returns a JSON object with the attribute &#x60;&#x60;success&#x60;&#x60; as true or false (boolean). 
      * <p><b>200</b> - A JSON object with the attribute &#x60;&#x60;success&#x60;&#x60; with the value 0 (&#x60;&#x60;false&#x60;&#x60;) or 1 (&#x60;&#x60;true&#x60;&#x60;).
      * @param verifyRequest The verifyRequest parameter
      * @return ResponseSpec

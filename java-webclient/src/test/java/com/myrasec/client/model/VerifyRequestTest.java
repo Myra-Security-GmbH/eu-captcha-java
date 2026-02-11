@@ -1,6 +1,6 @@
 /*
  * Myra EU Captcha API
- * The API for Myra EU CAPTCHA provides one end point to verify the validity of client requests using EU CAPTCHA technology developed by Myra Security.  This API only describes how the validation of the EU CAPTCHA works. For a description of How-To-Integrate the EU CAPTCHA into your website, please refer to https://docs.eu-captcha.eu/  <br>  **Version History** | Version | |  Reason for change | | --- | --- | --- | | 1.0 |  | Initial release | 
+ * The API for Myra EU CAPTCHA provides one end point to verify the validity of client requests using EU CAPTCHA technology developed by Myra Security.      This API only describes how the validation of the EU CAPTCHA works. For a description of How-To-Integrate the EU CAPTCHA into your website, please refer to https://docs.eu-captcha.eu/         **Version History** | Version | |  Reason for change | | --- | --- | --- | | 1.0 |  | Initial release | 
  *
  * The version of the OpenAPI document: 1.0
  * 

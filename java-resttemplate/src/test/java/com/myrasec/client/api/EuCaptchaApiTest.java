@@ -1,6 +1,6 @@
 /*
  * Myra EU Captcha API
- * The API for Myra EU CAPTCHA provides one end point to verify the validity of client requests using EU CAPTCHA technology developed by Myra Security.  This API only describes how the validation of the EU CAPTCHA works. For a description of How-To-Integrate the EU CAPTCHA into your website, please refer to https://docs.eu-captcha.eu/  <br>  **Version History** | Version | |  Reason for change | | --- | --- | --- | | 1.0 |  | Initial release | 
+ * The API for Myra EU CAPTCHA provides one end point to verify the validity of client requests using EU CAPTCHA technology developed by Myra Security.      This API only describes how the validation of the EU CAPTCHA works. For a description of How-To-Integrate the EU CAPTCHA into your website, please refer to https://docs.eu-captcha.eu/         **Version History** | Version | |  Reason for change | | --- | --- | --- | | 1.0 |  | Initial release | 
  *
  * The version of the OpenAPI document: 1.0
  * 
@@ -38,7 +38,7 @@ class EuCaptchaApiTest {
     /**
      * Verify submitted client token
      *
-     * The client of the end-user have to make certain calculations as a so-called **proof-of-work** mechanism. The end point determines whether those calculations have been performed correctly. Also if the token has been used before, among other validation functions.  As a result the body returns a JSON object with the attribute &#x60;&#x60;success&#x60;&#x60; as true or false (boolean). 
+     * The client of the end-user have to make certain calculations as a so-called **proof-of-work** mechanism.   The end point determines whether those calculations have been performed correctly. Also if the token has been used before, among other validation functions.      As a result the body returns a JSON object with the attribute &#x60;&#x60;success&#x60;&#x60; as true or false (boolean). 
      *
      * @throws RestClientException
      *          if the Api call fails
