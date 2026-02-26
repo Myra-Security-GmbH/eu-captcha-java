@@ -1,5 +1,8 @@
 # EU CAPTCHA Java Clients
 
+For full documentation see **[docs.eu-captcha.eu](https://docs.eu-captcha.eu/)**.
+You can [sign up for free](https://app.eu-captcha.eu/user-registration) to get a sitekey.
+
 This repository contains three Java client variants for the EU CAPTCHA verification API, generated
 using `openapi-generator-cli` version 7.18.0.
 
@@ -17,8 +20,8 @@ Spring 6 without reactive programming. This variant uses `RestTemplate` for sync
 
 ### java-webflux-boot2
 
-**Use this when:** you want a non-blocking, reactive client for use in a non-Boot application,
-or you are integrating into a Spring WebFlux pipeline without Spring Boot 3.
+**Use this when:** your application uses Spring Boot 2 with WebFlux, or you are integrating
+into a Spring WebFlux pipeline without Spring Boot 3.
 
 - Spring WebFlux (`WebClient`) / Java 8+
 - Reactive API: `Mono<VerifyResponse> verifyClientToken(VerifyRequest)`
