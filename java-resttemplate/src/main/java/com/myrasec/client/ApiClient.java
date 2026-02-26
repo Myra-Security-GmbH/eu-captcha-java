@@ -71,7 +71,7 @@ import java.time.OffsetDateTime;
 
 import com.myrasec.client.auth.Authentication;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-11T13:29:19.732646793+01:00[Europe/Berlin]", comments = "Generator version: 7.18.0")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-02-11T13:29:19.732646793+01:00[Europe/Berlin]", comments = "Generator version: 7.18.0")
 public class ApiClient extends JavaTimeFormatter {
     public enum CollectionFormat {
         CSV(","), TSV("\t"), SSV(" "), PIPES("|"), MULTI(null);
@@ -94,7 +94,7 @@ public class ApiClient extends JavaTimeFormatter {
 
     protected int maxAttemptsForRetry = 1;
 
-    protected long waitTimeMillis = 10;
+    protected long waitTimeMillis = 500;
 
     protected String basePath = "https://api.eu-captcha.eu/v1";
 
@@ -181,9 +181,11 @@ public class ApiClient extends JavaTimeFormatter {
     }
 
     /**
-     * Set the wait time in milliseconds
+     * Set the base delay in milliseconds for exponential backoff.
+     * When a retryable error (5xx or 429) occurs, the delay before attempt {@code n} is
+     * {@code waitTimeMillis * 2^(n-1)}, capped at {@code waitTimeMillis * 2^10}.
      *
-     * @param waitTimeMillis the wait time in milliseconds
+     * @param waitTimeMillis the base delay in milliseconds
      * @return ApiClient this client
      */
     public ApiClient setWaitTimeMillis(long waitTimeMillis) {
@@ -649,10 +651,12 @@ public class ApiClient extends JavaTimeFormatter {
                         .equals(HttpStatus.TOO_MANY_REQUESTS)) {
                     attempts++;
                     if (attempts < maxAttemptsForRetry) {
+                        long delay = waitTimeMillis * (1L << Math.min(attempts - 1, 10));
                         try {
-                            Thread.sleep(waitTimeMillis);
+                            Thread.sleep(delay);
                         } catch (InterruptedException e) {
                             Thread.currentThread().interrupt();
+                            throw new RestClientException("Retry interrupted", e);
                         }
                     } else {
                         throw ex;
